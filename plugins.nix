@@ -40,6 +40,8 @@ with pkgs.vimPlugins; [
 
   # theme
   gruvbox
+  kanagawa-nvim
+  papercolor-theme
 
   # floaterm
   vim-floaterm
