@@ -1,6 +1,6 @@
 local function init()
-	vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
-	vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>")
+	vim.keymap.set("n", "<leader>ff", ":Telescope find_files hidden=true no_ignore=true<CR>")
+	vim.keymap.set("n", "<leader>fg", ":Telescope live_grep hidden=true no_ignore=true<CR>")
 	vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>")
 	vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>")
 	vim.keymap.set("n", "<leader>fd", ":Telescope lsp_definitions<CR>")
@@ -11,7 +11,7 @@ local function init()
 	require("telescope").setup({
 		defaults = {
 			file_sorter = require("telescope.sorters").get_fzy_sorter,
-			prompt_prefix = " >",
+			prompt_prefix = " > ",
 			color_devicons = true,
 
 			file_previewer = require("telescope.previewers").vim_buffer_cat.new,

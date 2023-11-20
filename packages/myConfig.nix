@@ -1,6 +1,6 @@
 { pkgs, src }:
 pkgs.vimUtils.buildVimPlugin {
   name = "ayham-nvim";
-  version = "unstable";
+  version = "1";
   inherit src;
 }
